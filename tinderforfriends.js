@@ -4,3 +4,10 @@ function questionTwo(){
   window.scrollBy(0,200);
 
 }
+
+$(document).ready(function(){
+    $('#TextBoxId').keypress(function(e){
+      if(e.keyCode==13)
+      $('#linkadd').click();
+    });
+});
