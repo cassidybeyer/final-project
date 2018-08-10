@@ -1,0 +1,43 @@
+HTML
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="FinalP.css">
+  </head>
+
+  <body>
+    <!--Form - help an user input -->
+    <form action="/action_page.php" text-align:"center">
+      <div class="container">
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <!-- Username/Name -->
+        <label for="name"><b>Username</b></label>
+        <input type="text" placeholder="Enter username" name="name" required>
+        <!--Email-->
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <!-- Password -->
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pws" required>
+        <!-- Repeat Password -->
+        <label for="pws-r"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="pws-r" required>
+        <!-- Birthday Info -->
+        <label for="bd"><b>Birthday</b></label>
+               <input type="date" name="bday">
+               <!-- Gender Info -->
+               <div><br>
+               <label for="gend"><b>What is your gender?</b></label>
+                 <input type="radio" name="gender" value="male"> Male
+                 <input type="radio" name="gender" value="female"> Female
+                 <input type="radio" name="gender" value="unknown"> Unknown </div>
+                 <hr>  <!--Horizontal Rule -->
+                 <button type="submit" class="registerb">Register</button></a>
+                 
+
+            </form>
+
+         </body>
+       </html>
