@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+      <h2>Now for your final revelation</h2>
+
+      <p>Click here to find your new friend!</p>
+
+      <button onclick="myFunction()">Try it</button>
+
+      <p id="demo"></p>
+
+    <script>
+      var friends = ["Sam", "Chandler", "Peyton", "Luca", "Laurin", "Parker", "Avery", "Riley", "Jordan", "Angel", "Quinn",
+      "Dakota", "Remington", "Taylor", "Harley", "Charlie", "Marley", "River", "Edin", "Olaf", "Bailey", "Finley". "Jamie", "Jesse", "JC"];
+      document.getElementById("demo").innerHTML = friends;
+
+      function shuffle(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+          // Pick a remaining element...
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+
+          // And swap it with the current element.
+          temporaryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+      }
+
+      // Used like so
+      function myFunction(){
+        var arr = [2, 11, 37, 42];
+        arr = shuffle(arr);
+        console.log(arr);
+      }
+      function assigns(){
+        document.getElementById("demo").innerHTML = "Age: " inputAge;
+        document.getElementById("demo").innerHTML = "Gender: " genderEntered;
+      }
+      </script>
+    </body>
+</html>

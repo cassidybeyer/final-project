@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel= "stylesheet" type= "text/css" href="tinderforfriends.css"/>
+    <script type="text/javascript" src="userName.js"></script>
+  </head>
+
+  <body onload="myFunction()">
+    <center>
+      <h1> Great! Here is a list of your male friends that we found you! </h1>
+      <button onclick="myFunction()">Click To Generate Friends!</button>
+      <p id="demo"> </p>
+      <script>
+      function shuffle(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+      }
+
+      function myFunction() {
+        var friends = ["Michael", "Josh", "Liam", "Harry", "Lewis", "Jackson", "Dmitry", "Alexander", "Matthew", "Adam", "Steve",
+          "Caleb", "Chase", "Preston", "Will", "Mitch", "Andrew", "Daniel"];
+        var names = shuffle(friends)
+        var email = ["pizza123@gmail.com", "docu34@aol.com", "dogsrgr8@yahoo.com", "ilovegiraffes@gmail.com", "gbacon@mac.com", "gdog@yahoo.com",];
+        var emails = shuffle(email)
+        document.getElementById("myText").innerHTML = names[0];
+        document.getElementById("myTexts").innerHTML = emails[0];
+      }
+      </script>
+        <h2>Your next friend is:  <span id="myText"></span></h2>
+        <h2>Her email address is: <span id="myTexts"></span></h2>
+        <a href= "Mainpage.html" ><button>Go back to main page</button> </a>
+
+    </center>
+    </body>
+  </html>

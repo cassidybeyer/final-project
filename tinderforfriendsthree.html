@@ -2,29 +2,33 @@
 <html>
   <head>
     <link rel= "stylesheet" type= "text/css" href="tinderforfriends.css"/>
-    <script type="text/javascript" src="tinderforfriends.js"></script>
+    <script type="text/javascript" src="userName.js"></script>
   </head>
 
   <body>
-    <span id = "navigation">
-      <a href= "tinderforfriendsthree.html"></a>
-    </span>
-
     <center>
-      <h1> What is the preferred age range of your new friend? </h1>
-      <form action="/action_page.php" method="get">
-      <span class="age"></span><input type="age" placeholder="type age here" autocomplete="off" name= area required>
-      </form>
-      <p> </p>
+      <h1> What is the preferred gender of your new friend? </h1>
+        <span id="navigation">
+        <a href= "girlChoicePage.html" ><button onclick="girlFunction()">Female</button> </a>
+        <a href= "boyChoicePage.html" ><button onclick="boyFunction()">Male</button> </a>
+        <a href= "otherChoicePage.html" ><button onclick="otherFunction()">No Preference</button> </a>
+        <p id="genders"></p>
 
-      <form action="tinderforfriendsfour.html">
-        <input type="submit" value="Go to next question">
-      </form>
-      <!--  <input type="Submit" value="Submit" title="submit age" > -->
-
-
-    <!--<span class="gender"></span><input type="gender" placeholder="type gender here" autocomplete="off" name= area required>
-    <input type="Submit" value="Submit" title="submit gender" > -->
-
-  </center>
-</body>
+      </span>
+      <script>
+      function girlFunction() {
+        var genderEntered = "female";
+        document.getElementById("genders").innerHTML = "Great. We will find you a female friend!";
+      }
+      function boyFunction() {
+        var genderEntered = "male";
+        document.getElementById("genders").innerHTML = "Great. We will find you a male friend!";
+      }
+      function otherFunction() {
+        var genderEntered = "other";
+        document.getElementById("genders").innerHTML = "Great. We will find you a friend!";
+      }
+      </script>
+    </center>
+    </body>
+  </html>
