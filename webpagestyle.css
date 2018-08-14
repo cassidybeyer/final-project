@@ -1,9 +1,23 @@
-  .carousel-item {
-    height: 100vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.display-4 {
+  color: #3333cc;
+  font-style: "Times New Roman";
+  font-size: 20px;
+}
+.lead {
+  font-size: 20px;
+  weight: 30%;
+  color: #1affff;
+}
+.navbar-brand {
+  size: 30px;
+
+}
