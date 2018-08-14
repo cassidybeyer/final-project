@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="FinalP.css">
+    <script type="text/javascript" src="FinalPJ.js"></script>
+  </head>
+
+  <body>
+    <!--Form - help an user input -->
+    <form action="/action_page.php" class="pure-form" text-align:"center">
+      <div class="container">
+        <h1>Register</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr>
+        <!-- Username/Name -->
+        <label for="name"><b>Username</b></label>
+        <input type="text" placeholder="Enter username" name="name" required>
+        <!--Email-->
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+
+        <!-- Password -->
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="pws" id="password" required>
+        <!-- Repeat Password
+        <label for="pws-r"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="pws-r" id="confirm_password" required-->
+
+        <!-- Birthday Info -->
+        <label for="bd"><b>Birthday</b></label>
+        <input type="date" name="bday">
+        <!-- Gender Info -->
+        <div><br>
+        <label for="gend"><b>What is your gender?</b></label>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="Other"> Other </div>
+          <hr>  <!--Horizontal Rule -->
+
+          <button type="submit" class="registerb">Register</button>
+        </form>
+
+          <div class="top-left">BUDDIES</div>
+
+
+
+
+
+  </body>
+</html>
