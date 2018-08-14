@@ -1,58 +1,68 @@
-body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: black;
-  }
-  * {
-      box-sizing: border-box;
-      color: purple;
-      text-align: center;
-  }
-  /* The background of all information */
-  .container {
-      padding: 30px;
-      background-color: white;
-      width: 45%;
-      position: absolute;
-      left: 335px;
-      top: 40px;
-  }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("edmbg.jpg");
 
-  /* Full-width input fields */
-  input[type=text], input[type=password] {
-      width: 100%;
-      padding: 15px;
-      margin: 5px 0 22px 0;
-      display: inline-block;
-      border: none;
-      background: #d1d1e0;
+}
 
-  }
+* {
+    box-sizing: border-box;
+    color: purple;
+    text-align: center;
+}
+.top-left {
+  font-size: 35px;
+  font-family: "Times New Roman";
+  position: absolute;
+  top: 3px;
+  right: 700px;
+  color: white;
 
-  input[type=text]:focus, input[type=password]:focus {
-      background-color: #ddd;
-      outline: none;
-  }
+}
+/* The background of all information */
+.container {
+    padding: 30px;
+    background-color: white;
+    width: 45%;
+    position: absolute;
+    left: 335px;
+    top: 40px;
+}
 
-  /* Overwrite default styles of hr */
-  hr {
-      border: 1px solid #f1f1f1;
-      margin-bottom: 20px;
-  }
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #d1d1e0;
 
-  }
+}
 
-  /* Set a style for the submit button */
-  .registerb {
-      background-color: purple;
-      color: white;
-      padding: 16px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 80%;
-      opacity: 1;
-  }
-  /*Hover - when mouse on "register" = change of clearness (opacity)*/
-  .registerb:hover {
-      opacity: 0.5;
-  }
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 20px;
+}
+
+
+/* Set a style for the submit button */
+.registerb {
+    background-color: purple;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    opacity: 1;
+}
+/*Hover - when mouse on "register" = change of clearness (opacity)*/
+.registerb:hover {
+    opacity: 0.5;
+}
