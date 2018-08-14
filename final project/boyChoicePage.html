@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel= "stylesheet" type= "text/css" href="tinderforfriends.css"/>
+  <script type="text/javascript" src="userName.js"></script>
+  <link rel="stylesheet" type="text/css" href="webpagestyle.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+ <script type="text/javascript" src="tinderforfriends.js"></script>
+</head>
+
+  <body onload="myFunction()">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">BUDDIES</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Mainpage.html">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="FinalP.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutPage.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <center>
+      <font color= "white">
+      <br><br><br>
+      <h1> Great! Here is a list of your male friends that we found you! </h1>
+      <button onclick="myFunction()">Click for a new friend!</button>
+      <p id="demo"> </p>
+      <script>
+      function shuffle(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+      }
+
+      function myFunction() {
+        var friends = ["Michael", "Josh", "Liam", "Harry", "Lewis", "Jackson", "Dmitry", "Alexander", "Matthew", "Adam", "Steve",
+          "Caleb", "Chase", "Preston", "Will", "Mitch", "Andrew", "Daniel", "Jonah", "Ruben", "Noah", "Jacob", "Sean",];
+        var names = shuffle(friends)
+        var email = ["pizza123@gmail.com", "docu34@aol.com", "dogsrgr8@yahoo.com", "ilovegiraffes@gmail.com", "gbacon@mac.com", "gdog@yahoo.com",];
+        var emails = shuffle(email)
+        document.getElementById("myText").innerHTML = names[0];
+        document.getElementById("myTexts").innerHTML = emails[0];
+      }
+      </script>
+        <h2>Your next friend is:  <span id="myText"></span></h2>
+        <h2>His email address is: <span id="myTexts"></span></h2>
+        <a href= "tinderforfriendsthree.html" ><button >Go Back</button> </a>
+        <a href= "Mainpage.html" ><button>Go back to main page</button> </a>
+      </font>
+    </center>
+    </body>
+  </html>

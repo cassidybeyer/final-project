@@ -1,0 +1,56 @@
+button{
+    background-color: purple;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+}
+
+p1{
+  text-align: right;
+}
+p2{
+  text-align: left;
+}
+
+p4{
+  padding-right: 50px;
+}
+
+.krys{
+  padding-left: 30px;
+  float:left;
+}
+
+.hiking{
+  padding-left: 30px;
+  float:right;
+}
+
+
+body{
+  background: linear-gradient(145deg, #e94fb0, #920972, #0a3683, #3c0e59, #ff00c3, #696fdc);
+  background-size: 1200% 1200%;
+  padding-top: none;
+
+
+  -webkit-animation: AnimationName 25s ease infinite;
+  -moz-animation: AnimationName 25s ease infinite;
+  animation: AnimationName 25s ease infinite;
+}
+  @-webkit-keyframes AnimationName {
+      0%{background-position:74% 0%}
+      50%{background-position:27% 100%}
+      100%{background-position:74% 0%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:74% 0%}
+      50%{background-position:27% 100%}
+      100%{background-position:74% 0%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:74% 0%}
+      50%{background-position:27% 100%}
+      100%{background-position:74% 0%}
+  }
